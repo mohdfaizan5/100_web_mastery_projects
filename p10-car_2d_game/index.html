@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testing grids</title>
+  <style>
+    body{
+      overflow: hidden;
+      /* border: 1px solid green; */
+      /* background-image: url(space-background.jpg); */
+      object-fit: contain;
+
+    }
+  main{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: end;
+      height: 500px;
+    }
+    #finish-line,
+    #car
+    {
+      width: 100px;
+    }
+    /* main{
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px;
+      column-gap: 20px;
+      row-gap: 20px;
+      padding: 10px;
+      justify-content: center;
+      align-items: flex-end;
+      
+    } */
+    img{
+      /* box-shadow: 1px 1px 1px red; */
+      /* transform: rotateZ(180deg); */
+    }
+    /* main div{
+      width: 50px;
+      height: 70px;
+      background-color: red;
+      border: 1px solid green;
+      transform: translateX(120px);
+    } */
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 426px) {
+      main{
+        grid-template-columns: 150px;
+        /* justify-content: center; */
+      }
+      
+    }
+    @media (max-width: 320px){
+
+    }
+  </style>
+</head>
+<body>
+  
+  <main>
+    <div>
+      <img id="car" src="car.png" style="width: 80px;" alt="">
+      <!-- <img id="rocket" src="3d-rocket.png" style="width: 80px;" alt=""> -->
+    </div>
+
+    <img id="finish-line" src="finish-line.png" alt="">
+  </main>
+  <script>
+    let car = document.querySelector('#car')
+    let finish = document.querySelector('#finish-line')
+    let goY = 0
+    let goX = 0
+
+    finish.style.transform = `translate(0px, -400px)`
+    
+
+
+    document.addEventListener('keydown', event=>{
+      console.log(event, event.code)
+      if(event.code == 'ArrowDown'){
+        goY += 10
+        car.style.transform = `translate(${goX}px, ${goY}px) rotateZ(180deg)`
+      }
+      else if(event.code == 'ArrowUp'){
+        goY -= 10
+        // car.style.transform = `translate(${goX}px, ${goY}px)`
+        car.style.transform = `translate(${goX}px, ${goY}px)`
+      }
+      else if(event.code == 'ArrowRight'){
+        goX += 10
+        car.style.transform = `translate(${goX}px, ${goY}px) rotateZ(90deg)`
+        // car.style.transform = ``;
+      }
+      else if(event.code == 'ArrowLeft'){
+        goX -= 10
+        // car.style.transform = `translate(${goX}px, ${goY}px)`
+        car.style.transform = `translate(${goX}px, ${goY}px) rotateZ(-90deg)`
+
+      if(car.style.transform == `translate(0px, -400px)`){
+        alert("won")
+      }
+      }
+
+    })
+  </script>
+</body>
+</html>
