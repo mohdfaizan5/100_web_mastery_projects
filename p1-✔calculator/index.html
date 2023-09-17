@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator++</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+  <main>
+    <div class="cal-container">
+      <h1 id="cal-h1">Calculator++</h1>
+
+      <div>
+        <input id="result-display" type="text" value="">
+      </div>
+
+      <div class="row-btns">
+        <button class="button1" onclick="calculate(1)">1</button>
+        <button class="button1" onclick="calculate(2)">2</button>
+        <button class="button1" onclick="calculate(3)">3</button>
+        <button class="button1 btn2" onclick="calculate('clearAll')">AC</button>
+      </div>
+
+      <div class="row-btns">
+        <button class="button1" onclick="calculate(4)">4</button>
+        <button class="button1" onclick="calculate(5)">5</button>
+        <button class="button1" onclick="calculate(6)">6</button>
+        <button class="button1 btn2" onclick="calculate('-')">-</button>
+      </div>
+
+      <div class="row-btns">
+        <button class="button1" onclick="calculate(7)">7</button>
+        <button class="button1" onclick="calculate(8)">8</button>
+        <button class="button1" onclick="calculate(9)">9</button>
+        <button class="button1 btn2" onclick="calculate('+')">+</button>
+      </div>
+
+      <div class="row-btns">
+        <button class="button1 btn2" onclick="calculate('.')">.</button>
+        <button class="button1 btn2" onclick="calculate(0)">0</button>
+        <button class="button1 btn2" onclick="calculate('clear')">Clear</button>
+        <button class="button1 btn2" onclick="calculate('compute')">=</button>
+      </div>
+    </div>
+    <div class="main-text-container">
+      <h3>
+        Calculator
+      </h3>
+      <h1>
+        Mathematical calculations <br> on your finger tips!!
+      </h1>
+    </div>
+  </main>
+
+</body>
+
+</html>

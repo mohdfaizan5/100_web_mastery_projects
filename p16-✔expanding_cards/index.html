@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expanding cards</title>
+  <style>
+    .container{
+      display: flex;
+    }
+    .img{
+      height: 200px;
+      /* width: 20px; */
+      border-radius: 15px;
+      background-position: top;
+      background-position-x: center;
+      margin-right: 10px;
+      flex: 0.5;
+      transition: flex 0.7s ease-in;
+    }
+
+    .active{
+      flex: 5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img" style="background-image: url(img1.jpg);"></div>
+    <div class="img" style="background-image: url(img2.jpg);"></div>
+    <div class="img" style="background-image: url(img1.jpg);"></div>
+    <div class="img" style="background-image: url(img2.jpg);"></div>
+    <div class="img" style="background-image: url(img1.jpg);"></div>
+  </div>
+
+
+  <script>
+    let imgs = document.querySelectorAll('.img')
+    console.log(imgs)
+    
+    imgs.forEach(img => {
+      img.addEventListener('click', (event)=>{
+        removeActiveClasses()
+        console.log('hi', event.target.classList.add('active'))
+      })
+    })
+
+    function removeActiveClasses(){
+      imgs.forEach(img =>{
+        img.classList.remove('active')
+      })
+    }
+    
+    // .addEventListener('click', ()=>{
+    //   console.log('hi')
+    // })
+  </script>
+</body>
+</html>

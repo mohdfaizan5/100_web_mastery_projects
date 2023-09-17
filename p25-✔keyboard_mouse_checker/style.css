@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'inter';
+  src: url(assets/Inter-Regular.ttf);
+}
+
+body {
+  font-family: inter;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+.keyboardContainer{
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgb(102, 102, 102);
+}
+
+/* KEYBOARD KEYS */
+button {
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 2px;
+  color: rgb(102, 102, 102);
+  background-color: rgb(251, 251, 251);
+  border: 1px solid rgb(197, 219, 236);
+  min-width: 30px;
+  border-radius: 10px;
+  transition: width 2s;
+}
+
+button:focus-visible {
+  width: 100px;
+  background-color: lightcoral;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: 2px underline orange;
+  margin-bottom: 90px;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+/* MOUSE */
+.leftMouse {
+  /* background-color: rgb(160, 160, 160); */
+  background-color: rgb(251, 251, 251);
+  width: 75px;
+  height: 85px;
+  border-top-left-radius: 9999px;
+  border: 1px solid rgb(102, 102, 102);
+  display: inline-block;
+}
+
+.rightMouse {
+  background-color: rgb(251, 251, 251);
+  width: 75px;
+  height: 85px;
+  border-top-right-radius: 9999px;
+  border: 1px solid rgb(102, 102, 102);
+  display: inline-block;
+}
+
+.midMouse {
+  background-color: rgb(251, 251, 251);
+  width: 20px;
+  height: 75px;
+  /* border-radius: 50%; */
+  border-top-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border: 1px solid rgb(102, 102, 102);
+  display: inline-block;
+}
+
+.downMouse {
+  background-color: rgb(251, 251, 251);
+  width: 183px;
+  height: 170px;
+  /* border-radius: 50%; */
+  /* border-top-right-radius: 9999px;
+  border-top-left-radius: 9999px; */
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border: 1px solid rgb(102, 102, 102);
+  /* display: inline-block; */
+}

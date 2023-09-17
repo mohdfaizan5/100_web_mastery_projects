@@ -1,0 +1,69 @@
+/* FONTS */
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  font-weight: 400;
+}
+
+
+
+
+main {
+  /* width: 500px; */
+  padding: 50px 100px;
+}
+
+
+
+.btn1 {
+  background-color: #1DD1E4;
+  border: 1px solid rgb(75, 75, 75);
+  padding: 10px 15px;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.btn2 {
+
+  background-color: #FA9A2D;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: -10px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 30px;
+  font-weight: 500;
+
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: rgb(75, 75, 75);
+}
+
+h4 {
+
+  color: rgb(75, 75, 75);
+}
+
+/* right section */
+.profilePic {
+  float: right;
+  /* display: inline-block; */
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid rgb(75, 75, 75);
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Keyboard && Mouse Test</h1>
+  <main>
+
+    <div class="keyboardContainer">
+
+      <button id="1">1</button>
+      <button id="2">2</button>
+      <button id="3">3</button>
+      <button id="4">4</button>
+      <button id="5">5</button>
+      <button id="6">6</button>
+      <button id="7">7</button>
+      <button id="8">8</button>
+      <button id="9">9</button>
+      <button id="0">0</button>
+      <br>
+      <button id="q">q</button>
+      <button id="w">w</button>
+      <button id="e">e</button>
+      <button id="r">r</button>
+      <button id="t">t</button>
+      <button id="y">y</button>
+      <button id="u">u</button>
+      <button id="i">i</button>
+      <button id="o">o</button>
+      <button id="p">p</button>
+      <br>
+      <button id="a">a</button>
+      <button id="s">s</button>
+      <button id="d">d</button>
+      <button id="f">f</button>
+      <button id="g">g</button>
+      <button id="h">h</button>
+      <button id="j">j</button>
+      <button id="k">k</button>
+      <button id="l">l</button>
+      <br>
+      <button id="z">z</button>
+      <button id="x">x</button>
+      <button id="c">c</button>
+      <button id="v">v</button>
+      <button id="b">b</button>
+      <button id="n">n</button>
+      <button id="m">m</button>
+      <br>
+      <!-- <button id="ctrl">Ctrl</button>
+      <button id="win">Win</button>
+      <button id="leftAlt">Alt</button> -->
+      <button id="Space" style="width: 150px;">Space</button>
+
+    </div>
+
+
+    <div class="mouseContainer">
+      <div class="leftMouse"></div>
+      <div class="midMouse"></div>
+      <div class="rightMouse"></div>
+      <div class="downMouse"></div>
+    </div>
+
+  </main>
+</body>
+<script>
+  const text = document.querySelectorAll('button')
+
+  // event.which for mouse click (left-1, right-3, mid-2)
+
+  document.addEventListener('keydown', e => {
+
+  })
+
+  document.addEventListener('mousedown', e => {
+    
+    console.log(e.key, e.which)
+    if (e.which === 1) {
+      // Left click
+      document.querySelector(".leftMouse").style.backgroundColor = 'orange'
+    }
+    else if (e.which === 3) {
+      // Left click
+      document.querySelector(".rightMouse").style.backgroundColor = 'orange'
+    }
+    else if (e.which === 2) {
+      // Left click
+      document.querySelector(".midMouse").style.backgroundColor = 'orange'
+    }
+  })
+
+  document.addEventListener('keypress', (event) => {
+    console.log(`${event.key} ${text.innerText}`, event.code)
+    text.forEach(e => {
+      if (e.id === event.key || e.id === event.code) {
+        console.log('yes', event.key)
+
+        document.getElementById(e.id).style.backgroundColor = 'orange'
+
+      }
+    })
+    // if(event.key === text.for){
+    //   text.style.backgroundColor = 'red';
+    // }
+    // if(text.innerText != event.key){
+    //   console.log("hi")
+    //   text.style.color = 'red';
+    // }
+  })
+
+  // Disabling right click 'option menu'
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+</script>
+
+</html>
