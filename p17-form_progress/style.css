@@ -6,12 +6,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .progress__container {
   display: flex;
   justify-content: space-between;
-  width: 150px;
+  width: 180px;
   position: relative;
 }
 
@@ -22,6 +24,10 @@ main {
   text-align: center;
   border-radius: 50%;
   background-color: white;
+}
+
+.f2 {
+  border-color: #999;
 }
 
 button {
@@ -44,7 +50,14 @@ button {
   position: absolute;
   background-color: #999;
   height: 5px;
-  width: 50%;
+  width: 100%;
   top: 40%;
   z-index: -1;
+  /* left: 5px; */
+}
+
+.progressLine2{
+  background-color: #3498db;
+  width: 20%;
+
 }

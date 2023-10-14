@@ -1,0 +1,53 @@
+body {
+  overflow: hidden;
+  /* border: 1px solid green; */
+  /* background-image: url(space-background.jpg); */
+  object-fit: contain;
+
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: end;
+  height: 500px;
+}
+
+#finish-line,
+#car {
+  width: 100px;
+}
+
+/* main{
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  
+} */
+img {
+  /* box-shadow: 1px 1px 1px red; */
+  /* transform: rotateZ(180deg); */
+}
+
+/* main div{
+  width: 50px;
+  height: 70px;
+  background-color: red;
+  border: 1px solid green;
+  transform: translateX(120px);
+} */
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 426px) {
+  main {
+    grid-template-columns: 150px;
+    /* justify-content: center; */
+  }
+
+}
+

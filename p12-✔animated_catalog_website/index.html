@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Catalog</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    h1 {
+      font-weight: 900;
+      font-size: 96px;
+      line-height: 96px;
+      font-family: 'Roboto', sans-serif;
+
+    }
+
+
+    main {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
+      height: 100vh;
+      margin-top: 20px;
+      /* gap: 10px; */
+    }
+
+    .left {
+      display: grid;
+      grid-template-columns: 316px 316px;
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+
+    .left div {
+      width: 280px;
+      height: 273px;
+      background-color: white;
+      color: #000;
+      /* border: 1px solid red; */
+      border-radius: 8px;
+      padding: 0px 18px 18px 18px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .left div:hover {
+      box-shadow: 5px 5px 0px rgba(255, 255, 255, 0.746);
+      transition: box-shadow 0.3s ease-in;
+    }
+
+    div img {
+      height: 55%;
+      margin-left: 80px;
+
+    }
+
+    h2 {
+      line-height: 34px;
+      font-size: 38px;
+      margin: 0px;
+      font-weight: 500;
+
+    }
+
+    div img:hover {
+      /* transform: scale(105%);
+  transition: transform 1s; */
+      animation: shake .5s ease-in;
+    }
+
+    /* Creating shake animation */
+    @keyframes shake {
+      20% {
+        /* transform: translateX(10px); */
+        transform: rotateZ(10deg);
+      }
+
+      60% {
+        transform: rotateZ(-5deg);
+      }
+    }
+  </style>
+  <script src="static/script.js" defer> </script>
+</head>
+
+<body>
+  <main>
+    <section class="left">
+      <div>
+        <img src="static/assets/LP_Artboard-1.png" alt="">
+        <h2>Landing Page Design</h2>
+      </div>
+      <div>
+        <img src="static/assets/LP_Artboard-2.png" alt="">
+        <h2>SAAS, POS, Dashboard</h2>
+      </div>
+      <div>
+        <img src="static/assets/LP_Artboard-3.png" alt="">
+        <h2>2D & 3D Illustrations</h2>
+      </div>
+      <div>
+        <img src="static/assets/LP_Artboard-4.png" alt="">
+        <h2>Mobile App Design</h2>
+      </div>
+    </section>
+    <section class="right">
+      <h1>WE DON'T <br> COPY <br> WE CREATE</h1>
+    </section>
+  </main>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- 
+🔥How to shoot professional videos on Mobile
+https://www.youtube.com/watch?v=JKUZyTJfQyY
+
+🔥Cinematic Light in low budget
+https://www.youtube.com/watch?v=J_R-KnO-7QY&list=PLGnw6NiYpeMbCe4lTwgiPFS1-gcxnhSki&index=1&pp=iAQB
+
+
+🔥Best In depth Overall shooting setup and color grading.
+https://www.youtube.com/watch?v=IlSk9Q2j-v0&list=PLokaFWLEBpZf9BHKrGeevxfADuUmq0fYA&index=3
+
+
+Color Grading in Mobile
+https://www.youtube.com/watch?v=C7Ao1FP3oT4&list=PLGnw6NiYpeMbCe4lTwgiPFS1-gcxnhSki&index=5&pp=iAQB
+
+
+🔥Voice editing in Mobile
+https://www.youtube.com/watch?v=mZY1kJswdQs&list=PLGnw6NiYpeMbCe4lTwgiPFS1-gcxnhSki&index=26&pp=iAQB
+
+
+🔥Simplest Mobile Video Editing tutorial among whole internet
+https://www.youtube.com/watch?v=nZjO2CRp_Mc
+
+
+INSPIRATION:
+
+🔥https://www.youtube.com/shorts/Lk1qLqqxjEk
+🔥https://www.youtube.com/shorts/i-gSHKWBhBc
+🔥https://www.youtube.com/shorts/Glu3EHSULis
+
+-->

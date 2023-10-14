@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans Symbols:700|Noto Sans Symbols:400');
+
+html {
+  font-size: 100%;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+/* 16px */
+
+body {
+  font-family: 'Noto Sans Symbols';
+  font-weight: 400;
+  background-color: black;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Noto Sans Symbols';
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.210rem;
+  line-height: 76px;
+  /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem;
+  /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem;
+  /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem;
+  /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem;
+  /* 21.28px */
+}
+
+small {
+  font-size: 0.750rem;
+  /* 12px */
+}
+
+
+/* Main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+
+
+/* Form Container */
+.formContainer {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 90vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.formContainer input {
+  background-color: black;
+  border: none;
+  padding: 20px 10px;
+  border-bottom: 2px solid rgb(255, 226, 204);
+  font-size: 22px;
+  color: rgb(255, 226, 204);
+  margin-bottom: 30px;
+}
+
+.input1 {
+  width: 800px;
+}
+
+.input2 {
+  width: 388px;
+}
+
+
+
+.formContainer input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(255, 110, 0);
+
+}
+
+form {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+
+/* First */
+.s1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* Button */
+.btn1 {
+  background-color: rgb(255, 110, 0);
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+
+.btn2 {
+  background-color: rgb(255, 226, 204);
+}
+
+#close {
+  cursor: pointer;
+  font-size: 30px;
+  right: 0;
+  float: right;
+}
+
+#close:hover {
+  background-color: red;
+}

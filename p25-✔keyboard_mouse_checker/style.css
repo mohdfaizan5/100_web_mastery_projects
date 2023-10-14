@@ -27,12 +27,12 @@ button {
   border: 1px solid rgb(197, 219, 236);
   min-width: 30px;
   border-radius: 10px;
-  transition: width 2s;
+  transition: background-color 0.5s;
 }
 
-button:focus-visible {
+button:active {
   width: 100px;
-  background-color: lightcoral;
+  background-color: green;
 }
 
 h1 {
@@ -81,7 +81,7 @@ h1 {
 }
 
 .downMouse {
-  background-color: rgb(251, 251, 251);
+  /* background-color: rgb(251, 251, 251); */
   width: 183px;
   height: 170px;
   /* border-radius: 50%; */

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Poppins:wght@400;500;700;900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+/*  */
+
+
+main {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 0 50px;
+  /* height: 100vh; */
+
+}
+
+main section {
+  width: 50%;
+}
+
+main img {
+  width: 80%;
+  /* z-index: 1; */
+}
+
+main h1 {
+  font-size: 5.2vw;
+  line-height: 5.2vw;
+}
+
+main p {
+
+  max-width: 450px;
+}
+
+.btn1 {
+  background-color: #ED461D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.btn2 {
+  background-color: #FEC300;
+}
+
+
+/* Mobile */
+@media (max-width: 426px ) {
+  main{
+    flex-direction: column-reverse;
+    padding: 0 20px;
+  }
+  main section{
+    margin: 20px;
+    width: 100%;
+  }
+
+  main h1{
+    font-size: 16vw;
+    line-height: 16vw;
+  }
+  body h1{
+    back
+  }
+
+}

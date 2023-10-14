@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="general.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+
+  <style>
+    main{
+      height: 100px;
+      /* overflow: hidden; */
+    }
+
+    .timeContainer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .timeContainer h1 {
+      color: rgb(64, 64, 64);
+      margin: 2px;
+      display: inline-block;
+      font-size: 120px;
+    }
+
+    .buttonContainer1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .totalPomo {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+    }
+
+    .totalPomo h3 {
+      margin-top: 30px;
+      margin-bottom: 0px;
+      color: rgb(23, 23, 23);
+    }
+
+    .totalPomo h4 {
+      margin-top: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <span id="element"></span>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+      typeSpeed: 50,
+    });
+  </script>
+  <main>
+
+    <h1 style="text-align: center;">Pomodoro</h1>
+
+    <div class="timeContainer">
+      <h1 id="minDisplay">25:</h1>
+      <h1 id="secDisplay">00</h1>
+    </div>
+
+    <div class="buttonContainer1">
+      <button class="basicBtn" id="startBtn">Start</button>
+      <button class="basicBtn" id="resetBtn">Reset</button>
+    </div>
+
+    <div class="totalPomo">
+      <h3>Total Pomodoro hrs</h3>
+      <h4 id="totalPomoMinsDisplay">8 hrs</h4>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

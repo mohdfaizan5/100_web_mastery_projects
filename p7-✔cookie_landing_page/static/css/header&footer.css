@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0px 50px;
+  border-bottom: 1px solid #03002D;
+  
+}
+
+header .companylogo h2 {
+  display: inline-block;
+  color: rgb(66,25,8);
+}
+
+header img {
+  height: 50px;
+}
+
+header div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+header nav a {
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+header nav a:hover {
+  text-decoration: 2px underline #03002D;
+  transition: all 4s;
+}
+
+header .mobile{
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 426px) {
+  
+  header{
+    padding: 0px 20px;
+  }
+
+  header .mobile{
+    display: block;
+  }
+  header nav{
+    display: none;
+  }
+  header .cta{
+    display: none;
+  }
+}

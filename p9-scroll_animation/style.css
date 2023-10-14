@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+  padding: 5px;
+  overflow-x: hidden;
+}
+
+.box {
+  border: 5px solid royalblue;
+  padding: 8vw;
+  transform: translateX(200%);
+  transition: tranform .4s ease;
+}
+
+.box:nth-of-type(even){
+  transform: translateX(-200%);
+}
+
+.box.show{
+  transform: translateX(0);
+}
+
+
+/* @keyframes slideLeftToRight {
+  from {
+    transform: translateX(-180vw);
+  }
+
+  to {
+
+  }
+}
+
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(180px);
+  }
+
+  to {
+
+  }
+} */

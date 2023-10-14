@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>Responsive NavBar | Project 8/100</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;500&family=Inter:wght@400;900&display=swap');
+
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      font-family: 'IBM Plex Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1vw 5vw;
+      /* border: 1px solid lightslategray; */
+      height: 60px;
+      border-bottom: 1px solid #888;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 2vw;
+    }
+    nav h2{
+      /* color: lightseagreen; */
+    }
+
+    nav ul i {
+      display: none;
+    }
+
+    a {
+      text-decoration: double;
+      /* margin-right: 4px; */
+    }
+
+    hr{
+      background-color: rgb(0, 0, 0);
+      width: 90%;
+      height: 3px;
+    }
+
+    @media (max-width: 425px) {
+      nav ul i {
+        display: block;
+      }
+
+      nav ul a {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div>
+        <h2>Logo</h2>
+      </div>
+
+      <ul>
+        <a href="">Home</a>
+        <a href="">Pricing</a>
+        <a href="">About</a>
+        <a href="">Login</a>
+        <i class="ri-menu-3-fill"></i>
+      </ul>
+
+
+    </nav>
+  </header>
+  <hr>
+</body>
+
+</html>
